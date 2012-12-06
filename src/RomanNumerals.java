@@ -13,12 +13,6 @@ public class RomanNumerals
 				res+='M';
 				i-=1000;
 			}
-			else if(i>=900 )
-			{
-				res+='C';
-				res+='M';
-				i-=900;
-			}
 			else if(i>=500)
 			{
 				res+='D';
