@@ -4,8 +4,6 @@ public class RomanNumerals
 	public String toRoman(int number)
 	{
 		String res ="";
-		if(number>3000 || number<0)
-			return res;
 		for(int i=number; i>0 ;)
 		{
 			if(i>=1000)
@@ -15,7 +13,8 @@ public class RomanNumerals
 			}
 			else if(i>=900 )
 			{
-				res+='C'+'M';
+				res+='C';
+				res+='M';
 				i-=900;
 			}
 			else if(i>=500)
@@ -25,7 +24,8 @@ public class RomanNumerals
 			}
 			else if(i>=400)
 			{
-				res+='C'+'D';
+				res+='C';
+				res+='D';
 				i-=400;
 			}
 			else if(i>=100)
@@ -35,7 +35,8 @@ public class RomanNumerals
 			}
 			else if(i>=90)
 			{
-				res+='X'+'C';
+				res+='X';
+				res+='C';
 				i-=90;
 			}
 			else if(i>=50)
@@ -45,7 +46,8 @@ public class RomanNumerals
 			}
 			else if(i>=40)
 			{
-				res+='X'+'L';
+				res+='X';
+				res+='L';
 				i-=40;
 			}
 			else if(i>=10)
@@ -55,7 +57,8 @@ public class RomanNumerals
 			}
 			else if(i>=9)
 			{
-				res+='I'+'X';
+				res+='I';
+				res+='X';
 				i-=9;
 			}
 			else if(i>=5)
@@ -65,7 +68,8 @@ public class RomanNumerals
 			}
 			else if(i>=4)
 			{
-				res+='I'+'V';
+				res+='I';
+				res+='V';
 				i-=4;
 			}
 			else if(i>=1)
