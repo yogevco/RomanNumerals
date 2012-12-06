@@ -4,6 +4,8 @@ public class RomanNumerals
 	public String toRoman(int number)
 	{
 		String res ="";
+		if(number>3000 || number<0)
+			return res;
 		for(int i=number; i>0 ;)
 		{
 			if(i>=1000)
