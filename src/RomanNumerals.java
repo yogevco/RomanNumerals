@@ -6,7 +6,7 @@ public class RomanNumerals
 		String res ="";
 		if(number>3000 || number<0)
 			return res;
-		for(int i=number; i>0 ;)
+		for(int i=number; i>0 ;i--)
 		{
 			if(i>=1000)
 			{
